@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  connection: local
+  gather-facts: false
+  tasks:
+    - name: import variables
+      include_vars: var
+
+    - name: create vpc
+      ec2_vpc_net:
+       name: "{{vpc-name}}"
+       cidr_block: 172.20.0.0/16
+       region: "{{region}}"
+       dns_hostnames: yes
+       dns_support: yes
+       state: "{{state}}"
+       tenancy: default
+    register: vpc_out

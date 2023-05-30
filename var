@@ -1,0 +1,15 @@
+vpc-name: kgf-vpc
+vpccidr: 172.20.0.0/16
+region: ap-south-1
+
+#subnets
+name: pubsub1
+zone1: ap-south-1a
+zone2: ap-south-1b
+zone3: ap-south-1c
+name: pubsub2
+name: pubsub3
+name: prisub1
+name: prisub2
+name: prisub3
+state: present
