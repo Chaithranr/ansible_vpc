@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   connection: local
-  gather-facts: false
+  gather_facts: false
   tasks:
     - name: import variables
       include_vars: var
@@ -15,4 +15,4 @@
        dns_support: yes
        state: "{{state}}"
        tenancy: default
-    register: vpc_out
+      register: vpc_out
