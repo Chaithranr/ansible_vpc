@@ -1,5 +1,5 @@
 vpc-name: kgf-vpc
-vpccidr: 172.20.0.0/16
+vpcCidr: 172.20.0.0/16
 region: ap-south-1
 
 #subnets
